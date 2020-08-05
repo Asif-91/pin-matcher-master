@@ -5,12 +5,20 @@ document.getElementById('random-generator')
     var fourDigitNumber = Math.floor(1000+ Math.random() * 9000);
 
 document.getElementById('displayNumber').value = fourDigitNumber;
-    myLoadFunction();
+displayNumber();
 });
 
 // notify section
-document.getElementById("submit-button").addEventListener("click" , function(){ let fourDigitsNum = document.getElementById("displayNumber"); let showCalDisplay = document.getElementById("showNumber"); if (fourDigitsNum.value == showCalDisplay.value){ document.getElementById("pin-matched").style.display = 'block'; 
-}
- else 
-{ document.getElementById("worng-pin").style.display = 'block'; } 
-})
+const submitBtn = document.getElementById("submit");
+submitBtn.addEventListener("click" , function(){ 
+    const generatePin = document.getElementById("displayNumber").value; 
+    const inputPin = document.getElementById("screenInput").value;
+
+    if (displayNumber == screenInput) { 
+        document.getElementById("pin-matched").style.display = "block"; 
+        return pinMatched;
+}   else { 
+    document.getElementById("worng-pin").style.display = "block";
+        return wrongPin; 
+} 
+});
