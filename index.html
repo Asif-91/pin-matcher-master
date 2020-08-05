@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="screenInput" class="form-control" type="text" >
+                    <input id="screenInput" class="form-control" type="text">
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
@@ -42,7 +42,7 @@
                                 <div class="button" onclick="screenInput.value=''">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="submit" id="submit" class="submit-btn">Submit</button>
                                 <p class="action-left">3 try left</p>
                             </div>
                     </div>
@@ -51,8 +51,8 @@
         </div>
 
         <div class="notify-section">
-            <p class="notify" class="wrong-pin">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify" class="pin-matched">✅ Pin Matched... Secret door is opening for you</p>
+            <p class="notify" id="wrong-pin">❌ Pin Didn't Match, Please try again</p>
+            <p class="notify" id="pin-matched">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
 </body>
